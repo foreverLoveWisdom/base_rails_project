@@ -25,3 +25,34 @@ Add to your `~/.pryrc`:
 ```bash
 Pry.config.prompt = PryRails::RAILS_PROMPT if defined?(PryRails::RAILS_PROMPT)
 ```
+
+### amazing_print for IRB console
+
+[amazing_print](https://rubygems.org/gems/amazing_print) pretty print Ruby objects
+to visualize their structure.
+Supports custom object formatting via plugins.
+
+Add to your `~/.irbrc`:
+
+```bash
+# frozen_string_literal: true
+
+require "amazing_print"
+AmazingPrint.irb!
+```
+
+### amazing_print for Rails console with Pry
+
+Add to your `~/.pryrc`:
+
+```bash
+# frozen_string_literal: true
+
+require "amazing_print"
+AmazingPrint.pry!
+
+AmazingPrint.defaults = {
+  indent: -2,
+  limit: true
+}
+```
