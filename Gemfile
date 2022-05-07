@@ -63,18 +63,16 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'standard', group: [:development, :test]
 
-# Pretty print Ruby objects to visualize their structure
-gem "amazing_print", "~> 1.4"
-
 group :development, :test do
   gem 'rspec-rails'
 end
-
-# Pretty print Ruby objects to visualize their structure
-gem "amazing_print", "~> 1.4"
 
 group :development, :test do
   gem 'factory_bot_rails'
 end
 
 gem "devise", "~> 4.8"
+
+gem 'faker', '~> 2.20'
+gem 'redis', '~> 4.6'
+gem 'redis-namespace', '~> 1.8', '>= 1.8.2'
