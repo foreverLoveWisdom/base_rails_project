@@ -71,8 +71,14 @@ group :development, :test do
   gem 'factory_bot_rails'
 end
 
+gem 'overcommit', '~> 0.59.1'
+gem 'reek', '~> 6.1', '>= 6.1.1'
+gem 'rubocop-performance', '~> 1.14', '>= 1.14.3'
+gem 'rubocop-rspec', '~> 2.12', '>= 2.12.1'
+gem 'rubocop-rails', '~> 2.15', '>= 2.15.2'
 gem "devise", "~> 4.8"
-
+gem 'awesome_print', '~> 1.9', '>= 1.9.2'
 gem 'faker', '~> 2.20'
 gem 'redis', '~> 4.6'
 gem 'redis-namespace', '~> 1.8', '>= 1.8.2'
+gem 'solargraph', '~> 0.45.0'
